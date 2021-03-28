@@ -9,7 +9,7 @@ public class FileMaker{
     private static int fileCount;
 
     public FileMaker(String fileName,  String fileType) {
-        if(!FileTypeChecker(fileType)){
+        if(FileTypeChecker(fileType)){
             this.fileId = UniqueIdCreator(fileType);
             this.fileName = fileName;
             this.fileType = fileType;
